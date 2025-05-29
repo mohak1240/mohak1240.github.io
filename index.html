@@ -14,20 +14,82 @@
     crossorigin="anonymous"></script>
   </head>
   <style>
-    body {
-      font-family: 'poppins', sans-serif;
-      font-size:16px;
-      line-height:1.6;
-      background:linear-gradient(to right,#f0f0f0,#dff6f0)
-    }
-    .container {
-      background: #e0ff7fa;/*light teal*/
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align:center;
+    /* GLOBAL STYLES */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  background: linear-gradient(to right, #f0f0f0, #dff6f0);
+  color: #333;
+}
+
+/* LAYOUT */
+header, main, footer {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding-top: 60px;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.2em;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* SECTIONS */
+section {
+  margin: 60px 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #aaa;
+  padding-bottom: 10px;
+}
+
+/* PROJECTS */
+.project {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+ padding: 20px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.02);
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #0077cc;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+  padding: 40px 0;
+}
     }
     h1 {
       color: #2c3e50;
