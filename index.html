@@ -2,149 +2,225 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width,initial-scale=1.0">
-  <title>Mohak Ghosh| Portfolio</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=poppins&display=swap
-    "rel="stylesheet"
-    <link rel="stylesheet"
-    href="style.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js"
-    crossorigin="anonymous"></script>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohak Ghosh | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     /* GLOBAL STYLES */
-body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  margin: 0;
-  background: linear-gradient(to right, #f0f0f0, #dff6f0);
-  color: #333;
-}
-
-/* LAYOUT */
-header, main, footer {
-  max-width: 900px;
-  margin: auto;
-  padding: 30px;
-}
-
-/* HEADER */
-header {
-  text-align: center;
-  padding-top: 60px;
-}
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.2em;
-}
-
-header p {
-  font-size: 1.2rem;
-  color: #666;
-}
-
-/* SECTIONS */
-section {
-  margin: 60px 0;
-}
-
-h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #aaa;
-  padding-bottom: 10px;
-}
-
-/* PROJECTS */
-.project {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
- padding: 20px;
-  margin-bottom: 30px;
-  transition: transform 0.3s ease;
-}
-
-.project:hover {
-  transform: scale(1.02);
-}
-
-.project a {
-  display: inline-block;
-  margin-top: 10px;
-  text-decoration: none;
-  color: #0077cc;
-}
-
-.project a:hover {
-  text-decoration: underline;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  font-size: 14px;
-  color: #999;
-  padding: 40px 0;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    h1 {
-      color: #2c3e50;
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(to right, #f0f0f0, #dff6f0);
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+   }
+
+    img {
+      max-width: 100%;
+    }
+
+    header, section, footer {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(to right, #0072ff, #00c6ff);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 10px 0 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: white;
+ color: #0072ff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #f0f0f0;
+    }
+
+    /* ABOUT */
+    #about {
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    /* SECTION HEADINGS */
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #aaa;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+
+    /* SKILLS */
+ #skills ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    #skills li {
+      background: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* PROJECTS */
+    .project-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: scale(1.02);
+    }
+
+    .project-card a {
+      color: #0077cc;
+      font-weight: bold;
+    }
+   /* CONTACT */
+    #contact p {
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      color: #555;
+      padding: 30px 20px;
+    }
+
+    .social-icons i {
+      font-size: 24px;
+      margin: 0 10px;
+      color: #0077cc;
+      transition: color 0.3s;
+    }
+
+    .social-icons i:hover {
+      color: #0055aa;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      #skills ul {
+        flex-direction: column;
+  align-items: center;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Mohak's portfolio
-    </h1>
-  </header>
-  <main class="container">
-    <img src="MOHAK.JPG" alt="Profile Picture" style="width:150px; border-radius:50%;">
-    <section id="about"
-      <h2>ABOUT ME</h2>
-<p>Hello, I'm Mohak</p>
-    <p>Welcome to my personal website!</p>
-    <p>I’m a beginner learning web development. This is my first step into the world of coding, websites, and creativity online.I am pursuing electronics and communication engineering. Focus on coding,development,linux,storage to get opportunity in industrial field to get hands on hands experience and gain knowledge</p>
-    </section>
-  </main>
-    </header>
-<main>
-  <section>
-    <h2>Projects</h2>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Hi, I'm Mohak Ghosh</h1>
+    <p>Aspiring Web Developer | ECE Student</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <img src="MOHAK.JPG" alt="Profile Picture" class="profile-img">
+    <h2>About Me</h2>
+    <p>I am currently pursuing Electronics and Communication Engineering. I’m exploring web development and love learning about coding, Linux, and storage systems. This is my personal portfolio — my first step in the tech world.</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
     <ul>
-      <li>My First HTML Page</li>
-      <li>GitHub Portfolio Site</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Linux</li>
+      <li>Storage Concepts</li>
+ <li>GitHub</li>
     </ul>
   </section>
-</main>
 
-<footer>
-  <p>&copy; 2025 Mohak Ghosh. All rights reserved.</p>
-</footer>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>GitHub Portfolio</h3>
+      <p>A clean personal website built using only HTML & CSS and hosted via GitHub Pages.</p>
+      <a href="https://mohak1240.github.io" target="_blank">View Live</a>
+    </div>
+    <div class="project-card">
+      <h3>My First HTML Page</h3>
+      <p>My very first hand-coded webpage while learning HTML basics.</p>
+    </div>
+  </section>
 
+  <!-- CONTACT -->
+  <section id="contact">
     <h2>Contact Me</h2>
-    <p>Name:Mohak Ghosh</p>
-    <p><strong>Email:</strong> sanug7718@gmail.com.com</p>
-    <p>phone:+918910436602
-</body>
-  <h2>Social Media</h2>
-<a href="https://www.linkedin.com/in/mohak-ghosh-bb9a702b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-  <img src="linkedin.png" 
-       alt="LinkedIn" 
-       width="30" 
-       height="30"
-       style="vertical-align:middle;">
-</a>
-  <a
-    href="https://www.facebook.com/share/19DNapUcgk/" target="_blank">
-    <image src="facebook"
-      alt="facebook"
-      width="30"
-      height="30"
-      style="vertical-align:middle;"
+    <p>Email: sanug7718@gmail.com</p>
+    <p>Phone: +91 89104 36602</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <h2>Connect with Me</h2>
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/mohak-ghosh-bb9a702b2" target="_blank">
+        <i class="fab fa-linkedin"></i>
       </a>
-<p>
+ <a href="https://facebook.com" target="_blank">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+    <p>© 2025 Mohak Ghosh. All Rights Reserved.</p>
+  </footer>
+
+</body>
 </html>
