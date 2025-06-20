@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohak Ghosh | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
-    /* GLOBAL STYLES */
     * {
       margin: 0;
       padding: 0;
@@ -24,19 +24,17 @@
     a {
       text-decoration: none;
       color: inherit;
-   }
+    }
 
     img {
       max-width: 100%;
     }
-
-    header, section, footer {
+ header, section, footer {
       padding: 40px 20px;
       max-width: 900px;
       margin: auto;
     }
 
-    /* HERO SECTION */
     .hero {
       text-align: center;
       padding: 80px 20px;
@@ -56,7 +54,7 @@
     .btn {
       display: inline-block;
       background: white;
- color: #0072ff;
+      color: #0072ff;
       padding: 10px 20px;
       border-radius: 8px;
       font-weight: bold;
@@ -65,9 +63,8 @@
 
     .btn:hover {
       background: #f0f0f0;
-    }
+  }
 
-    /* ABOUT */
     #about {
       text-align: center;
     }
@@ -78,7 +75,6 @@
       margin-bottom: 20px;
     }
 
-    /* SECTION HEADINGS */
     h2 {
       font-size: 1.8rem;
       margin-bottom: 20px;
@@ -87,8 +83,7 @@
       text-align: center;
     }
 
-    /* SKILLS */
- #skills ul {
+    #skills ul {
       list-style: none;
       display: flex;
       flex-wrap: wrap;
@@ -100,10 +95,9 @@
       background: #fff;
       padding: 10px 20px;
       border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
-    /* PROJECTS */
     .project-card {
       background: #fff;
       padding: 20px;
@@ -121,31 +115,32 @@
       color: #0077cc;
       font-weight: bold;
     }
-   /* CONTACT */
+
     #contact p {
       text-align: center;
       font-size: 1rem;
-    }
+  }
 
-    /* FOOTER */
     footer {
       text-align: center;
       color: #555;
       padding: 30px 20px;
     }
 
-    .social-icons i {
+    .social-icons a {
       font-size: 24px;
       margin: 0 10px;
-      color: #0077cc;
-      transition: color 0.3s;
+      transition: color 0.3s, transform 0.3s;
     }
 
-    .social-icons i:hover {
-      color: #0055aa;
+    .social-icons a:hover {
+      transform: scale(1.2);
     }
 
-    /* RESPONSIVE */
+    .social-icons .fa-linkedin { color: #0A66C2; }
+    .social-icons .fa-facebook { color: #4267B2; }
+    .social-icons .fa-instagram { color: #E1306C; }
+
     @media (max-width: 768px) {
       .hero h1 {
         font-size: 2rem;
@@ -153,7 +148,7 @@
 
       #skills ul {
         flex-direction: column;
-  align-items: center;
+        align-items: center;
       }
     }
   </style>
@@ -183,14 +178,14 @@
       <li>JavaScript</li>
       <li>Linux</li>
       <li>Storage Concepts</li>
- <li>GitHub</li>
+      <li>GitHub</li>
     </ul>
   </section>
 
   <!-- PROJECTS -->
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project-card">
+ <div class="project-card">
       <h3>GitHub Portfolio</h3>
       <p>A clean personal website built using only HTML & CSS and hosted via GitHub Pages.</p>
       <a href="https://mohak1240.github.io" target="_blank">View Live</a>
@@ -212,13 +207,16 @@
   <footer>
     <h2>Connect with Me</h2>
     <div class="social-icons">
-      <a href="https://linkedin.com/in/mohak-ghosh-bb9a702b2" target="_blank">
-        <i class="fab fa-linkedin"></i>
+      <a href="https://www.instagram.com/downtoearth__23?igsh=bHJlZHZwdnR3N3Ux" target="_blank">
+        <i class="fab fa-instagram"></i>
       </a>
- <a href="https://facebook.com" target="_blank">
+      <a href="https://www.facebook.com/share/19DNapUcgk/" target="_blank">
         <i class="fab fa-facebook"></i>
       </a>
-    </div>
+      <a href="https://www.linkedin.com/in/mohak-ghosh-bb9a702b2" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+</div>
     <p>© 2025 Mohak Ghosh. All Rights Reserved.</p>
   </footer>
 
